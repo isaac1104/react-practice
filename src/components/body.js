@@ -23,13 +23,6 @@ class Body extends Component {
   }
 
   render() {
-    let message;
-    if (this.state.message.length <= 0) {
-      message = "You can change this text dynamically by using the input field below";
-    } else {
-      message = `${this.state.message}`;
-    }
-
     return (
       <div>
         <div className="content-wrap text-center">
@@ -41,7 +34,8 @@ class Body extends Component {
         </div>
         <div className="body-content-2 text-center">
           <div>
-            <h5>{message}</h5>
+            <h3>Input Text Below</h3>
+            <h5>{this.state.message}</h5>
             <input className="input" type="text" name="text" onChange={this.changeMessage.bind(this)}/>
           </div>
         </div>
