@@ -14,8 +14,8 @@ img {
 }
 
 #jumbo {
-  background-color: #67daf9;
-  color: #353b40;
+  background-color: #353b40;
+  color: white;
 }
 
 .btn {
@@ -50,15 +50,9 @@ img {
   }
 }
 
-.content-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .body-content-1 {
   background-color: #353b40;
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -67,8 +61,8 @@ img {
 }
 
 .body-content-2 {
-  background-color: #67daf9;
-  color: #353b40;
+  background-color: #353b40;
+  color: white;
   height: 30vh;
   display: flex;
   align-items: center;
@@ -83,8 +77,29 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 4rem;
+}
+
+.body-content-4 {
+  background-color: #353b40;
+  color: white;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .input {
   margin-top: 20px;
+}
+
+.palette {
+  margin: 0 auto;
+  height: 200px;
+  width: 150px;
+  padding: 0;
+  background-color: #FFF;
+  Webkit-filter: drop-shadow(0px 0px 5px #666);
+  filter: drop-shadow(0px 0px 5px #666);
 }
