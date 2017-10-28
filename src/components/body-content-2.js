@@ -13,11 +13,16 @@ class BodyContent2 extends Component {
   }
 
   render() {
+    let text;
+    if (this.state.message.length <= 0) {
+      text = "Input any text in the textbox below"
+    } else {
+      text = this.state.message;
+    }
     return (
       <div className="body-content-2 text-center">
         <div>
-          <h3>Input Text Below</h3>
-          <h5>{this.state.message}</h5>
+          <h5>{text}</h5>
           <input className="input" type="text" name="text" onChange={this.changeMessage.bind(this)}/>
         </div>
       </div>
